@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <View
+        android:id="@+id/bg_view"
+        android:layout_width="370dp"
+        android:layout_height="330dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/file_sent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="340dp"
+        android:layout_height="170dp"
+        android:elevation="8dp"
+        android:padding="1dp"
+        android:layout_marginTop="428dp"
+        android:background="@drawable/rounded_box"
+        app:layout_constraintEnd_toEndOf="@+id/bg_view"
+        app:layout_constraintStart_toStartOf="@+id/bg_view"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/btn_send_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="70dp"
+            android:contentDescription="Send Icon"
+            android:src="@drawable/file"
+            app:layout_constraintEnd_toEndOf="@+id/btn_UploadFile"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_UploadFile"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_UploadFile"
+            android:layout_width="175dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="#616EB1"
+            android:text="UPLOAD FILE"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            app:cornerRadius="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btn_send_icon" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="127dp"
+            android:layout_height="18dp"
+            android:layout_marginBottom="4dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/btn_UploadFile"
+            app:layout_constraintEnd_toEndOf="@+id/btn_UploadFile"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintStart_toStartOf="@+id/btn_UploadFile" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/btn_GenerateLinK"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#616EB1"
+        android:elevation="8dp"
+        android:enabled="false"
+        android:text="GENERATE  LINK"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <TextView
+        android:id="@+id/fileLinkTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text=""
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btn_GenerateLinK"
+        app:layout_constraintEnd_toEndOf="@+id/btn_GenerateLinK"
+        app:layout_constraintStart_toStartOf="@+id/btn_GenerateLinK" />
+
+    <!-- Copy Button -->
+    <ImageButton
+        android:id="@+id/copy"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/copy_icon"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/fileLinkTextView"
+        app:layout_constraintStart_toEndOf="@+id/fileLinkTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core Colors -->
+    <color name="primary">#616EB1</color>
+    <color name="primary_variant">#505D99</color>
+    <color name="secondary">#6D7ABF</color>
+    <color name="secondary_variant">#5663A2</color>
+
+    <!-- Background and Surfaces -->
+    <color name="background">#F2F3F8</color> <!-- Soft, light background -->
+    <color name="surface">#FFFFFF</color> <!-- Card or Surface color -->
+    <color name="card_background">#F8F9FC</color>
+    <color name="link_background">#E6E9F5</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1D1E2C</color> <!-- Deep muted gray for high contrast -->
+    <color name="text_secondary">#4A4D69</color> <!-- Soft grayish indigo tone -->
+    <color name="text_hint">#7C82A1</color> <!-- For hint or helper text -->
+
+    <!-- Button / Icon Colors -->
+    <color name="button_background">#616EB1</color>
+    <color name="button_text">#FFFFFF</color>
+    <color name="icon_tint">#616EB1</color>
+
+    <!-- Status Colors (Muted) -->
+    <color name="success">#7DA27C</color> <!-- Muted green -->
+    <color name="warning">#C4A46B</color> <!-- Muted amber/brownish yellow -->
+    <color name="error">#A96464</color> <!-- Muted red tone -->
+</resources>
